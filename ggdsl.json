@@ -1,10 +1,14 @@
 {
-  "description": "Lets-plot and Dataframe ggdsl",
-  "properties": {
-    "v": "0.1.1"
-  },
+  "description": "Kotlin plotting DSL for Lets-Plot",
+  "properties": [
+    {"name": "ggDSLVersion", "value": "0.3.2"},
+    {"name": "applyColorScheme", "value": "true"}
+  ],
   "link": "https://github.com/AndreiKingsley/lib-ggdsl",
   "dependencies": [
-    "org.jetbrains.kotlinx:ggdsl-dataframe-lets-plot:$v"
+    "org.jetbrains.kotlinx:ggdsl-lets-plot:$ggDSLVersion"
+  ],
+  "integrationTypeNameRules": [
+    "-:org.jetbrains.kotlinx.dataframe.**"
   ]
 }

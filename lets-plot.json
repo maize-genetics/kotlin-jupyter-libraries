@@ -1,9 +1,9 @@
 {
   "description": "ggplot-like interactive visualization for Kotlin",
   "properties": {
-    "api": "4.1.0",
-    "lib": "2.5.0",
-    "js": "2.5.0",
+    "api": "4.3.0",
+    "lib": "3.1.0",
+    "js": "3.1.0",
     "isolatedFrame": ""
   },
   "link": "https://github.com/JetBrains/lets-plot-kotlin",
@@ -24,6 +24,7 @@
     "org.jetbrains.letsPlot.sampling.*",
     "org.jetbrains.letsPlot.export.*",
     "org.jetbrains.letsPlot.tooltips.*",
+    "org.jetbrains.letsPlot.annotations.*",
     "org.jetbrains.letsPlot.themes.theme",
     "org.jetbrains.letsPlot.themes.elementBlank",
     "org.jetbrains.letsPlot.themes.elementRect",
@@ -56,6 +57,8 @@
     "org.jetbrains.letsPlot.pos.positionJitterDodge",
     "org.jetbrains.letsPlot.bistro.corr.*",
     "org.jetbrains.letsPlot.bistro.qq.*",
+    "org.jetbrains.letsPlot.bistro.joint.*",
+    "org.jetbrains.letsPlot.bistro.residual.*",
     "org.jetbrains.letsPlot.intern.toSpec"
   ],
   "init": [
@@ -69,6 +72,7 @@
   ],
   "renderers": {
     "org.jetbrains.letsPlot.intern.Plot": "HTML(frontendContext.getHtml($it as org.jetbrains.letsPlot.intern.Plot))",
+    "org.jetbrains.letsPlot.intern.figure.SubPlotsFigure": "HTML(frontendContext.getHtml($it as org.jetbrains.letsPlot.intern.figure.SubPlotsFigure))",
     "org.jetbrains.letsPlot.GGBunch": "HTML(frontendContext.getHtml($it as org.jetbrains.letsPlot.GGBunch))"
   }
 }
